@@ -1,0 +1,15 @@
+body {
+    margin: 0 auto;
+}
+.daily-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.weather-icon {
+    width: 50px;
+}
+
+h1 {
+    font-size: 22px;
+}
