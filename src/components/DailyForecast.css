@@ -1,15 +1,81 @@
 body {
     margin: 0 auto;
 }
+
 .daily-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    height: 250px;
+    background-image: url('../assets/background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.daily-weather {
+    padding: 25px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .weather-icon {
-    width: 50px;
+    width: 40px;
+    margin: 0 20px 0 0;
+    display: flex; 
+    align-items: center;
 }
 
-h1 {
+h2 {
     font-size: 22px;
+    margin: 40px 0 0 0;
+}
+ h3 {
+    margin: -20px 0 10px 0;
+ }
+
+.daily-container p {
+    font-size: 40px;
+}
+
+.farmer-comment {
+    margin: 0 auto;
+}
+
+.farmer-comment p {
+    font-size: 14px;
+    margin: -15px 0 0 0;
+}
+
+.stats-today {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 50px 0;
+}
+
+.stats-today p {
+    font-size: 12px;
+}
+
+.bonus-data {
+    width: 44vw;
+    height: 35px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+
+.icon {
+    margin: 0 0 0 20px;
+}
+
+.humidity {
+    background-color: #724E91;
+}
+
+.wind-speed {
+    background-color: #94A562;
 }

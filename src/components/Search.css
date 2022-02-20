@@ -1,0 +1,10 @@
+.search-bar {
+    background-color: #60B3F9;
+    padding: 10px;
+}
+
+.location-list {
+    list-style-type: none;
+    text-align: left;
+    line-height: 25px;
+}
