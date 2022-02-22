@@ -3,7 +3,7 @@ import useForecast from '../hooks/useForecast'
 import SearchAutoComplete from './Search'
 import Forecast from './Forecast'
 import Loading from './Loading'
-import { withTheme } from '@emotion/react';
+import Welcome from './Welcome'
 
 function App() {
   const {isError, isLoading, forecast, handleRequest} = useForecast();
@@ -15,13 +15,22 @@ function App() {
   return (
     <div className="App">
       < SearchAutoComplete submitSearch={handleSubmit}/>
+      {!forecast && !isLoading && (
+        <div>
+          < Welcome />
+        </div>
+        )}
       {!forecast && (
         <div>
           {isLoading && < Loading />}
         </div>
 
       )}
-      {forecast && < Forecast forecast={forecast}/>}
+      {forecast && (
+        <div>
+          < Forecast forecast={forecast}/>
+        </div>
+      )}
     </div>
   );
 }

@@ -9,6 +9,7 @@ const useForecast = () => {
     
     const handleRequest = async (lat, long) => {
         setLoading(true);
+        setForecast(null);
         axios.get(`http://localhost:3001/api/?lattlong=${lat},${long}`)
             .then(response => createForecast(response.data));
     } 
@@ -18,7 +19,6 @@ const useForecast = () => {
         const currentDay = currentDayForecast(data.consolidated_weather[0], data.title)
         const futureDays = futureDaysForecast(data.consolidated_weather);
         setForecast({currentDay, futureDays})
-        // setLoading(false);
     }
 
     const currentDayForecast = (data, title) => {
@@ -31,6 +31,7 @@ const useForecast = () => {
             max: Math.round(data.max_temp),
             humidity: data.humidity,
             wind_speed: Math.round(data.wind_speed),
+            weather_state: data.weather_state_abbr,
             weatherIcon: `https://www.metaweather.com/static/img/weather/${data.weather_state_abbr}.svg`,
         })
     }

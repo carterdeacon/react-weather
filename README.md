@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Farmer Weather
+This project was bootstrapped with Create React App. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can access it [here]()
 
-## Available Scripts
+I wanted to create a weather app and who better to model that after than the people that talk about the weather 24/7? Living in a rural town, I've heard all sorts of comments and discussions on the weather and I've placed some of those comments in this mobile-first app to capture the essence of rural Australians.
 
-In the project directory, you can run:
+## Functionality
+Farmer Weather uses the MetaWeather API to proivide the data for locations anywhere. Upon search, the user will be given recommendations based on their input. These recommendations are provided by the [usePlacesAutocomplete](https://github.com/wellyshen/use-places-autocomplete) npm module. Use a custom react hook (useForecast) for the first time was really interesting and rendering components conditionally based on the custom hook.
 
-### `npm start`
+## Technologies used
+* React.js
+* Node.js / Express
+* Axios
+* MUI Library
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Planning
+Initally, I envisioned the project to be one page. However, As it progressed, it became more obviosu there would need to be more to it. The initial wireframe:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![wireframe](./src/assets/wireframe.png)
 
-### `npm test`
+## Challenges
+1. __Working with MetaWeather API and usePlacesAutocomplete__ - the MetaWeather API uses woeIDs and then lat / long to get locations. It would be nice to have two versions of user input (one manually typed with an "Enter" pressed and one with the recommendations selected). Currently, the user will need to make a selection from the recommendations to get the weather. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. __Machine Learned messages__ - initially, the goal was to provide the user with a message that was done through Machine Learning. This is something I still have interest in and would love to action in futuer but due to time constraints, is not currently ready as of February, 2022.
 
-### `npm run build`
+## Known Bugs / Issues
+_User Input_ - as mentioned above, user input is a little fiddly. Currently, the user will __have__ to select from the drop down recommendations to get the weather.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_Persistence between sessions_ - in future, I will add persistent states os the user can come back and it saves their previsouly searched location. This was attempted briefly but was returning an incorrect weather forecast so was put on the backburner until after submission. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

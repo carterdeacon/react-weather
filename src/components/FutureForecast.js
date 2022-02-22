@@ -22,7 +22,6 @@ const FutureForecast = ({forecast}) => {
                     )})
                 }
             </div>
-
         </div>
     )
 }
