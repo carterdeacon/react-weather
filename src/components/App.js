@@ -6,7 +6,7 @@ import Loading from './Loading'
 import Welcome from './Welcome'
 
 function App() {
-  const {isError, isLoading, forecast, handleRequest} = useForecast();
+  const { isLoading, forecast, handleRequest } = useForecast();
 
   const handleSubmit = (lat, lng) => {
     handleRequest(lat, lng)

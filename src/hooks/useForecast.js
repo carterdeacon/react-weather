@@ -3,7 +3,6 @@ import axios from 'axios'
 import moment from 'moment'
 
 const useForecast = () => {
-    const [isError, setError] = useState(false)
     const [isLoading, setLoading] = useState(false)
     const [forecast, setForecast] = useState(null)
     

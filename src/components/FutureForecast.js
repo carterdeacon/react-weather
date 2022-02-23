@@ -27,3 +27,4 @@ const FutureForecast = ({forecast}) => {
 }
 
 export default FutureForecast
+
