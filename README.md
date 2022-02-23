@@ -9,13 +9,15 @@ I wanted to create a weather app and who better to model that after than the peo
 Farmer Weather uses the MetaWeather API to proivide the data for locations anywhere. Upon search, the user will be given recommendations based on their input. These recommendations are provided by the [usePlacesAutocomplete](https://github.com/wellyshen/use-places-autocomplete) npm module. Use a custom react hook (useForecast) for the first time was really interesting and rendering components conditionally based on the custom hook.
 
 ## Technologies used
+The server for this project can be viewed [here](https://github.com/carterdeacon/react-weather-server)
+
 * React.js
 * Node.js / Express
 * Axios
 * MUI Library
 
 ## Project Planning
-Initally, I envisioned the project to be one page. However, As it progressed, it became more obviosu there would need to be more to it. The initial wireframe:
+Initally, I envisioned the project to be one page. However, As it progressed, it became more obviosu there would need to be more to it. This changed as time went on and the project progressed. The initial wireframe:
 
 ![wireframe](./src/assets/wireframe.png)
 
@@ -27,6 +29,9 @@ Initally, I envisioned the project to be one page. However, As it progressed, it
 ## Known Bugs / Issues
 _User Input_ - as mentioned above, user input is a little fiddly. Currently, the user will __have__ to select from the drop down recommendations to get the weather.
 
-_Persistence between sessions_ - in future, I will add persistent states os the user can come back and it saves their previsouly searched location. This was attempted briefly but was returning an incorrect weather forecast so was put on the backburner until after submission. 
+_Persistence between sessions_ - in future, I will add persistent states os the user can come back and it saves their previsouly searched location. This was attempted briefly but was returning an incorrect weather forecast so was put on the backburner until after submission.
 
-
+## Future Additions
+1. Persistence between sessions (saved user location)\
+2. More active sayings / Machine learning for comments would be ideal and fun to explore
+3. More extensive weather data if the user clicks on a day.
