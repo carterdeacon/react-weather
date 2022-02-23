@@ -1,10 +1,9 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import usePlacesAutocomplete, { getGeocode, getLatLng } from "use-places-autocomplete";
 import useOnclickOutside from "react-cool-onclickoutside";
 import './Search.css'
 import { TextField } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
-import InputAdornment from '@mui/material/InputAdornment';
+
 
 const SearchAutoComplete = (props) => {
 

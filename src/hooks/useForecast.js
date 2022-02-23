@@ -48,7 +48,6 @@ const useForecast = () => {
     }
 
     return {
-            isError,
             isLoading,
             forecast,
             handleRequest
