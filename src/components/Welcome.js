@@ -4,16 +4,6 @@ import { useState } from 'react'
 
 const Welcome = () =>{
 
-    const [message, setMessage] = useState(true);
-
-    const handleMessages = () => {
-        setTimeout(setMessage(!message), 2000)
-        console.log(message)
-        handleMessages();
-    }
-
-  
-
     return (
         <div className='welcome'>
             <Animated animationIn="slideInRight" animationOut="slideOutLeft" isVisible={true}>
