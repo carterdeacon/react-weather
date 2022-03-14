@@ -1,8 +1,6 @@
 # Farmer Weather
 This project was bootstrapped with Create React App. 
 
-You can access it [here]()
-
 I wanted to create a weather app and who better to model that after than the people that talk about the weather 24/7? Living in a rural town, I've heard all sorts of comments and discussions on the weather and I've placed some of those comments in this mobile-first app to capture the essence of rural Australians.
 
 ## Functionality
