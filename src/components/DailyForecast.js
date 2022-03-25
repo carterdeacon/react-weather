@@ -37,22 +37,6 @@ const DailyForecast = ({forecast}) => {
         }
     }
 
-    const randomWeatherMessage = (weather, temp) => {
-        if (temp < 15 || weather === 'sn' || weather === 'sl') {
-            return sample(["GlOBaL wARmINg? You believe in that?", "And those lefties think the worlds getting hotter?"])
-        } else if (temp > 35) {
-            return sample(["Lucky the tractors got aircon. Hah.", "Hope you brought your sunscreen.", "She's a scorcher.", "This is just a normal day out west."])
-        } else if (weather === 'hr' || weather === 'lr') {
-            return sample(["Lovin' this rain.", "Bloody hell. Needed this rain a month ago.", "Hope we get a good coupla inches, hey?", "How many inches you guys get out there?", "Good to top up the dam."])
-        } else if (weather === 's') {
-            return sample(["This bloody weather can't decide what it wants to do!", "If you're gonna rain, do it right.", "Better than no rain I suppose."])
-        } else if (weather === 'c' || weather === 'lc') {
-            return sample(["Crops will be loving this sun", "We're due for a good bit of rain...", "Woould be good if we got a few inches soon."])
-        } else if (weather === 'hc') {
-            return sample(["Good to have a break from the sun.", "We need the bloody sun out for the crops to grow.", "All this cloud and no bloody rain."])
-        }
-    } 
-
     return (
         <div>
             <section className='daily-container'>
